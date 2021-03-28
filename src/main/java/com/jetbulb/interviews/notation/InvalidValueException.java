@@ -1,4 +1,4 @@
-package com.jetbulb.interviews;
+package com.jetbulb.interviews.notation;
 
 public class InvalidValueException extends RuntimeException {
     public InvalidValueException(String message) {

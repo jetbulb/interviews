@@ -1,4 +1,4 @@
-package com.jetbulb.interviews;
+package com.jetbulb.interviews.notation;
 
 public class NotationConverter {
     public int toArabic(String romanNotation) throws InvalidValueException {
