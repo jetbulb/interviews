@@ -19,14 +19,15 @@ class GroupingAlgorithmTest {
     @Test
     void shouldGroupUniqueElementsByValue() {
         Map<Long, Long> groupedValues = algorithm.execute(numbers).get();
-        assertThat(groupedValues.get(0)).isEqualTo(1);
-        assertThat(groupedValues.get(1)).isEqualTo(2);
-        assertThat(groupedValues.get(2)).isEqualTo(1);
-        assertThat(groupedValues.get(4)).isEqualTo(5);
+        System.out.println(groupedValues);
+        assertThat(groupedValues.get(0L)).isEqualTo(1);
+        assertThat(groupedValues.get(1L)).isEqualTo(2);
+        assertThat(groupedValues.get(2L)).isEqualTo(1);
+        assertThat(groupedValues.get(4L)).isEqualTo(5);
     }
 
     @Test
-    void shouldSortAscendingly() {
+    void shouldSortDescendingly() {
         Map<Long, Long> groupedValues = algorithm.execute(numbers).sort().get();
         assertThat(groupedValues.keySet()).containsExactly(0L, 1L, 2L, 4L);
     }

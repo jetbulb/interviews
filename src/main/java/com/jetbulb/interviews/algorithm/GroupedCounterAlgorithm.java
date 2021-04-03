@@ -4,7 +4,7 @@ import java.util.Map;
 
 /**
  * Find unique elements, count them and then group by value.
- * Implement ASC sorting method by key.
+ * Implement DESC sorting method by key.
  */
 public class GroupedCounterAlgorithm implements Algorithm<long[], Map<Long, Long>> {
 
