@@ -29,7 +29,7 @@ class GroupingAlgorithmTest {
     @Test
     void shouldSortDescendingly() {
         Map<Long, Long> groupedValues = algorithm.execute(numbers).sort().get();
-        assertThat(groupedValues.keySet()).containsExactly(0L, 1L, 2L, 4L);
+        assertThat(groupedValues.keySet()).containsExactly(4L, 2L, 1L, 0L);
     }
 
 }
