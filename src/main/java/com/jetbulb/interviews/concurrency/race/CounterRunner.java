@@ -1,6 +1,6 @@
 package com.jetbulb.interviews.concurrency.race;
 
-public class CounterRun {
+public class CounterRunner {
     public static void main(String[] args) {
         new Thread(new Counter()).start();
         new Thread(new Counter()).start();
